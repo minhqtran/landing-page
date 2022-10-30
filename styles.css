@@ -1,7 +1,12 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   display: flex;
   flex-direction: column;
   margin: 0;
+
 }
 
 .section-one{
@@ -14,17 +19,22 @@ body{
 .header{
   display: flex;
   justify-content: space-between;
-  
+  padding-top: 10px;
 }
 
 .logo-text{
-  font-size: 24px;
-  color: #f9faf8;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: 'Lato',sans-serif ;
 }
 
 a{
   text-decoration: none;
-  color: gray;
+  color: #adb7bd;
+}
+
+a:hover{
+  background-color: rosybrown;
 }
 
 ul{
@@ -33,49 +43,55 @@ ul{
   margin: 0;
   padding: 0;
   gap: 20px;
+  font-size: 20px;
 }
 
 .main{
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: baseline;
   padding: 50px 0;
 }
 
 .left-text{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
 }
 
 .main-text{
   font-size: 48px;
-  color: #f9faf8;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
   margin-bottom: 6px;
 }
 
 .second-text{
   font-size: 18px;
-  color: #e5e7eb;
+  color: #adb7bd;
   margin-bottom: 6px;
 }
 
-img{
-  width: 50%;
-  height: auto;
+.r-image img{
+  width: 500px;
+  padding-left: 50px;
+  padding-right: 0;
+margin: 0;
 }
 
 .main button{
-  background-color: #3882f6;
-  padding: 0;
+  background-color: #48222f ;
+  padding: 30px 20px;
   margin: 0;
+  border: 0;
+  width: 100px;
 }
 
 .section-two{
   padding: 0 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .title{
@@ -84,17 +100,43 @@ img{
   color: #1f2937;
   padding: 25px 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
+
 }
+
 
 .subtext{
   display: flex;
-  justify-content: center;
-  gap: 60px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  gap: 10px;
   margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
 .info{
   width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.info img{
+  width: 200px;
+  height: 200px;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .subtext img{
@@ -119,10 +161,37 @@ img{
 
 .section-four{
   padding: 50px 200px;
+  display: flex;
+  align-items: center;
 }
 
 .container{
   padding: 20px 50px;
+  display: flex;
+  width: 100%;
+  background-color: #3882f6;
+  gap: 50px;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sign{
+  border-color: white;
+  background-color: #3882f6;
+  color: white;
+  border-radius: 10%;
+  width: 80px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.action{
+ font-size: 20px; 
 }
 
 footer{
